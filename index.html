@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <title>Code player</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">CODE PLAYER</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12" id="top-buttons">
+    <div class="btn-group" id="toggles">
+      <button type="button" class="btn btn-default toggle active">HTML</button>
+      <button type="button" class="btn btn-default toggle">CSS</button>
+      <button type="button" class="btn btn-default toggle">JS</button>
+      <button type="button" class="btn btn-default toggle active">RESULT</button>
+    </div>
+    <button type="button" class="btn btn-primary" id="runButton">RUN</button>
+  </div>
+  <br />
+  <div id="wrapper">
+    <div class="clear"></div>
+    <div class="codeContainer" id="HTMLContainer">
+      <div class="codeLabel"  id="html">
+        <center>HTML</center>
+      </div>
+
+      <hr>
+      <textarea id="htmlCode">
+        <div id="circle">
+          <h1 class="test-code">Html</h1>
+        </div>
+      </textarea>
+    </div>
+
+    <div class="codeContainer" id="CSSContainer">
+      <div class="codeLabel"  id="css">
+        <center>CSS</center>
+      </div>
+
+      <hr>
+      <textarea id="cssCode">
+        #circle {
+          width:200px;
+          height:200px;
+          border-radius:50%;
+          background-color: #B9121B;
+        }
+
+        .test-code {
+          font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+          padding:80px 0 0 60px;
+          color:white;
+        }
+      </textarea>
+    </div>
+
+    <div class="codeContainer" id="JSContainer">
+      <div class="codeLabel" id="js">
+        <center>JAVASCRIPT</center>
+      </div>
+
+      <hr>
+      <textarea id="jsCode" placeholder="Javascript functionality has been disabled."></textarea>
+    </div>
+
+    <div class="codeContainer" id="RESULTContainer">
+      <div class="codeLabel" id="result">
+        <center>RESULT</center>
+      </div>
+
+      <hr>
+      <center>
+        <iframe id="resultFrame"></iframe>
+      </center>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

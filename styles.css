@@ -1,0 +1,149 @@
+
+body {
+  margin:0;
+  padding: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+#menubar {
+  width:100%;
+  height:40px;
+  background-color: #E0E0E0;
+  border-bottom: 1px solid grey;
+}
+
+#logo {
+  padding:7px 0 0 20px;
+  font-size: 120%;
+  float:left;
+}
+
+.group{
+  /*height:100px;*/
+}
+
+#runButton {
+  margin-left: 5px
+}
+
+.navbar-nav {
+  margin-top:-1px;
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+#html {
+  color:#F1672C;
+}
+
+#css {
+  color:#30A9DC;
+}
+
+#js {
+  color:#F1BF26;
+}
+
+#result {
+  color:#0C73B8;
+}
+
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-brand {
+  float:none;
+}
+
+#toggles {
+  text-align: center;
+}
+
+#toggles li {
+  position: relative;
+  display: block;
+  padding: 15px 10px 17px 10px;
+}
+
+#top-buttons {
+  text-align: center;
+}
+
+.toggle.active {
+  background-color: grey;
+}
+
+.clear {
+  clear:both;
+}
+
+.codeContainer {
+  height:100%;
+  width: 50%;
+  float:left;
+  position: relative
+}
+
+.codeContainer textarea {
+  width: 100%;
+  height: 100%;
+  border:none;
+  border-right: 1px solid grey;
+  font-family: "Lucida Console", Monaco, monospace
+  font-size:90%;
+  padding:5px;
+  box-sizing:border-box;
+}
+
+.codeLabel {
+  padding-top:10px;
+  font-weight:bold;
+}
+
+#wrapper {
+  margin-top:10px;
+}
+
+#jsCode {
+  text-align: center
+}
+
+#CSSContainer, #JSContainer {
+  display: none;
+}
+
+iframe {
+  height:230px;
+  position:relative;
+  left:50px;
+  border:none;
+}
+
+@media (max-width: 767px) {
+  iframe {
+  height:230px;
+  position:relative;
+  left:10px;
+  border:none;
+  width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  iframe {
+  height:230px;
+  position:relative;
+  left:10px;
+  border:none;
+  width: 170px;
+  }
+}
